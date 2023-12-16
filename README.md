@@ -4,9 +4,10 @@
 
 -Pages
 1. Products List Page
-        -Products Card
+        -Products Cards
 
 2. Product Details Page
+        -Product Details
 
 3. Cart Page
 
