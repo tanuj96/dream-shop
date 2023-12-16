@@ -1,17 +1,18 @@
 import React from 'react'
 import logo from '../utils/assets/logo.jpg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="header">
       <div className="logo-container">
-        <img className="logo" src={logo} alt='shop-logo'/>
+        <Link to="/"><img className="logo" src={logo} alt='shop-logo'/></Link>
       </div>
       <div className="nav-items">
         <ul>
-          <li>Products</li>
-          <li>Cart</li>
-          <button className="login">
+          <Link to={"/"}><li>Products</li></Link>
+          <Link to={"/cart"}><li>Cart</li></Link>
+          <button className="signin-btn">
             Sign In
           </button>
         </ul>

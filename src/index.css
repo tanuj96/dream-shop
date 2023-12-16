@@ -9,6 +9,8 @@ body {
 a{
   text-decoration: none;
   color: inherit;
+  margin: inherit;
+  padding: inherit;
 }
 
 .product-card {
@@ -85,9 +87,52 @@ a{
   display: flex;
   width: 50%;
   justify-content: space-around;
+  align-items: center;
   border: 1px solid gray;
+  border-radius: 25px;
 }
 
 .product-details-image{
-  height:450px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-picture{
+  padding: 40px;
+  overflow: hidden;
+}
+
+.product-information{
+  padding: 50px;
+}
+
+.cart-btn{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-btn:hover{
+  background-color: #45a049;
+}
+
+.signin-btn{
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }

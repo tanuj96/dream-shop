@@ -18,9 +18,9 @@ const ProductDetail = () => {
       </div>
       <div className='product-information'>
         <h2>{selectedProduct?.title}</h2>
-        <h2>{selectedProduct?.price}</h2>
+        <h2>₹{selectedProduct?.price}</h2>
         <p>{selectedProduct?.rating?.rate}</p>
-        <h4>{selectedProduct?.description}</h4>
+        <p>{selectedProduct?.description}</p>
         <button className='cart-btn'>Add To Cart</button>
       </div>
     </div>
