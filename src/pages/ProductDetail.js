@@ -14,7 +14,7 @@ const ProductDetail = () => {
   return (
     <div className='product-details'>
       <div className='product-picture'>
-        <img className='product-details-image' src={selectedProduct?.image} alt='product-photo'/>
+        <img alt='productView' className='product-details-image' src={selectedProduct?.image}/>
       </div>
       <div className='product-information'>
         <h2>{selectedProduct?.title}</h2>
