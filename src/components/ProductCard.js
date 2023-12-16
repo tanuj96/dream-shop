@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProductCard = ({ product }) => {
-  const { title, price, description, image, rating } = product;
+  const { title, price, image, rating } = product;
   return (
       <div className="product-card">
         <h4 className="product-name">{title}</h4>
