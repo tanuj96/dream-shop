@@ -8,6 +8,9 @@ const Header = () => {
       <div className="logo-container">
         <Link to="/"><img className="logo" src={logo} alt='shop-logo'/></Link>
       </div>
+      <div className='search-container'>
+        <input className='search-input' placeholder='Search for Products, Brands and More'></input>
+      </div>
       <div className="nav-items">
         <ul>
           <Link to={"/"}><li>Products</li></Link>

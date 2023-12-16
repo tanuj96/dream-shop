@@ -24,11 +24,13 @@ a{
   flex-direction: column;
   box-sizing: border-box;
   border: 1px solid gray;
+  text-align: center;
 }
 
 .product-card:hover {
   cursor: pointer;
-  background-color: rgb(109, 104, 104);
+  background-color: rgb(173, 156, 134);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
 }
 
@@ -52,9 +54,9 @@ a{
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: chocolate;
+  /* background-color: rgb(40, 134, 29); */
   align-items: center;
-  color: antiquewhite;
+  color: rgb(173, 156, 134);
 }
 
 .logo {
@@ -135,4 +137,15 @@ a{
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.search-input{
+  width: 700px;
+  height: 30px;
+  padding: 5px;
+  font-size: medium;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(246, 239, 239);
 }
