@@ -3,10 +3,11 @@ import logo from '../utils/assets/logo.jpg';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+
   return (
     <div className="header">
       <div className="logo-container">
-        <Link to="/"><img className="logo" src={logo} alt='shop-logo'/></Link>
+        <Link to="/"><img className="logo" src={logo} alt='shop-logo' /></Link>
       </div>
       <div className='search-container'>
         <input className='search-input' placeholder='Search for Products, Brands and More'></input>

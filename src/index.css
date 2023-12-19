@@ -24,7 +24,9 @@ a {
   height: 500px;
   padding: 10px;
   display: flex;
+  border-radius: 25px;
   flex-direction: column;
+  margin: 20px;
 }
 
 .product-card {
@@ -86,13 +88,6 @@ a {
   font-size: 20px;
   display: flex;
   list-style: none;
-}
-
-.product-filter-container > ul {
-  list-style: none;
-  width: 100%;
-  padding: inherit;
-  margin: inherit;
 }
 
 .login {
@@ -207,4 +202,12 @@ a {
   display: flex;
   justify-content: center;
   color: gray;
+}
+
+.product-filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 150px;
 }
