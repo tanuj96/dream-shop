@@ -29,17 +29,17 @@ const Cart = () => {
                   <h2>{product.title}</h2>
                 </Link>
                 <h3>₹{product.price}</h3>
-                <p>quantity</p>
+                <p>Quantity: {product?.quantity}</p>
               </div>
             </div>
           );
         })
       ) : (
         <div className="cart-empty-msg-container">
-        <p className="cart-empty-msg">
-          Your cart is empty! Explore our wide selection and find something you
-          like
-        </p>
+          <p className="cart-empty-msg">
+            Your cart is empty! Explore our wide selection and find something you
+            like
+          </p>
         </div>
       )}
     </div>

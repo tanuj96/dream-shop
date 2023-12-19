@@ -17,13 +17,27 @@ const ProductDetail = () => {
     if (localStorage.getItem("cart")) {
       let storedArrayJsonString = localStorage.getItem("cart");
       let storedArray = JSON.parse(storedArrayJsonString);
-      let cart = JSON.stringify([selectedProduct, ...storedArray]);
-      localStorage.setItem("cart", cart);
-    } else {
+
+      const isProductInCart = storedArray.findIndex((item) => item.id === selectedProduct.id);
+
+      if (isProductInCart !== -1) {
+        const updatedCart = [...storedArray];
+        updatedCart[isProductInCart].quantity += 1;
+        localStorage.setItem("cart", JSON.stringify(updatedCart));
+      }
+
+      else {
+        selectedProduct.quantity = 1;
+        let cart = JSON.stringify([selectedProduct, ...storedArray]);
+        localStorage.setItem("cart", cart);
+      }
+    }
+    else {
+      selectedProduct.quantity = 1;
       let cart = JSON.stringify([selectedProduct]);
       localStorage.setItem("cart", cart);
     }
-  };
+  }
 
   return (
     <div className="product-details">
