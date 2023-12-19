@@ -211,3 +211,12 @@ a {
   justify-content: flex-start;
   max-width: 150px;
 }
+
+.cart-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-controls button {
+  margin: 4px;
+}

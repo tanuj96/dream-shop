@@ -19,7 +19,6 @@ const ProductDetail = () => {
       let storedArray = JSON.parse(storedArrayJsonString);
 
       const isProductInCart = storedArray.findIndex((item) => item.id === selectedProduct.id);
-
       if (isProductInCart !== -1) {
         const updatedCart = [...storedArray];
         updatedCart[isProductInCart].quantity += 1;
